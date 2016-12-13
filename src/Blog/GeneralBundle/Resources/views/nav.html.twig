@@ -1,0 +1,23 @@
+{% extends("BlogGeneralBundle::base.html.twig") %}
+{% block nav %}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('blog_general_homepage') }}">BLOG</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ path('blog_general_homepage') }}">Accueil</a></li>
+                <li><a href="{{ path('fos_user_registration_register') }}">S'inscrire</a></li>
+                <li><a href="{{ path('fos_user_security_login') }}">Se connecter</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
